@@ -1,0 +1,17 @@
+page-forgot-pass {
+    ion-input{
+        border: 1px solid map-get($colors,primary);
+    }
+    .log{
+        width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quater{
+        width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+}
