@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Subscriptions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+
+
+      <ion-col col-2>
+        <ion-card>
+          <ion-card-content>
+            <p class="mNum">{{subscribers.length}}</p>
+            <p class="mText">Subscribers</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+
+
+
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-item *ngFor="let s of subscribers">
+    {{s.Email}}
+  </ion-item>
+
+</ion-content>

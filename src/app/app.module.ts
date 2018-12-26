@@ -12,6 +12,8 @@ import * as firebase from 'firebase';
 import { LoginPage } from '../pages/Auth/login/login';
 import { DashboardPage } from '../pages/Main Pages/dashboard/dashboard';
 import { ForgotPassPage } from '../pages/Auth/forgot-pass/forgot-pass';
+import { ContactUsPage } from '../pages/contact-us/contact-us';
+import { SubscriptionsPage } from '../pages/subscriptions/subscriptions';
 
 
 export const firebaseCred = {
@@ -31,6 +33,8 @@ firebase.initializeApp(firebaseCred);
     LoginPage,
     DashboardPage,
     ForgotPassPage,
+    ContactUsPage,
+    SubscriptionsPage,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,8 @@ firebase.initializeApp(firebaseCred);
     LoginPage,
     DashboardPage,
     ForgotPassPage,
+    ContactUsPage,
+    SubscriptionsPage,
   ],
   providers: [
     StatusBar,
