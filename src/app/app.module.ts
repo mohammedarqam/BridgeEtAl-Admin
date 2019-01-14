@@ -12,8 +12,9 @@ import * as firebase from 'firebase';
 import { LoginPage } from '../pages/Auth/login/login';
 import { DashboardPage } from '../pages/Main Pages/dashboard/dashboard';
 import { ForgotPassPage } from '../pages/Auth/forgot-pass/forgot-pass';
-import { ContactUsPage } from '../pages/contact-us/contact-us';
-import { SubscriptionsPage } from '../pages/subscriptions/subscriptions';
+import { ContactUsPage } from '../pages/Main Pages/contact-us/contact-us';
+import { SubscriptionsPage } from '../pages/Main Pages/subscriptions/subscriptions';
+import { AllUsersPage } from '../pages/Main Pages/all-users/all-users';
 
 
 export const firebaseCred = {
@@ -35,6 +36,7 @@ firebase.initializeApp(firebaseCred);
     ForgotPassPage,
     ContactUsPage,
     SubscriptionsPage,
+    AllUsersPage,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +55,7 @@ firebase.initializeApp(firebaseCred);
     ForgotPassPage,
     ContactUsPage,
     SubscriptionsPage,
+    AllUsersPage,
   ],
   providers: [
     StatusBar,

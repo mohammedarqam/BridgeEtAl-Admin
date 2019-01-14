@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Contact Us Responses</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-grid>
+    <ion-row>
+
+
+      <ion-col col-2>
+        <ion-card>
+          <ion-card-content>
+            <p class="mNum">{{responses.length}}</p>
+            <p class="mText">Responses</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+
+
+
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-item *ngFor="let r of responses">
+    {{r.Name}}
+  </ion-item>
+
+
+</ion-content>

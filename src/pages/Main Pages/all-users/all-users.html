@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>All Users</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <ion-card>
+          <ion-card-content>
+            <p class="mNum">{{users.length}}</p>
+            <p class="mText">Users</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-item *ngFor="let u of users">
+    {{u.First}}
+  </ion-item>
+
+</ion-content>
